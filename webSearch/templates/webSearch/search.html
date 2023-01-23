@@ -1,0 +1,8 @@
+<form action="/search/scan/" method="POST">
+    {% csrf_token %}
+    {{ search_form.as_p }}
+
+    <button type="submit">
+        Rechercher
+    </button>
+</form>
